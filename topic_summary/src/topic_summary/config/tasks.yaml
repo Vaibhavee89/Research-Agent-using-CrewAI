@@ -1,0 +1,20 @@
+research_task:
+  description: >
+    Research the top 5-10 key facts and latest developments about {topic}. 
+    Focus on providing specific, high-quality information including specific numbers, names, or dates.
+    Crucially, capture the URLs of the most relevant news articles or data sources you find.
+  expected_output: >
+    A detailed list of the top research findings and a list of source URLs/links for verification.
+  agent: researcher
+
+summarize_task:
+  description: >
+    Review the research findings and produce a professional briefing. 
+    The output must be formatted in Markdown and include:
+    1. A "Top Results" section with bullet points of the most important facts.
+    2. A "Concise Summary" section that synthesizes the information.
+    3. A "Latest News & References" section with clickable links to the sources found.
+    4. A "Professional Suggestions" section providing 3-5 actionable recommendations based on the data.
+  expected_output: >
+    A well-formatted Markdown document with four sections: "Top Results", "Concise Summary", "Latest News & References", and "Professional Suggestions".
+  agent: summarizer
